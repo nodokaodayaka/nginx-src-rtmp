@@ -13,4 +13,5 @@ RUN make
 RUN make install
 
 COPY conf/rtmp.conf /usr/local/nginx/conf/
+COPY conf/index.html /usr/local/nginx/html/
 RUN cat /usr/local/nginx/conf/rtmp.conf >> /usr/local/nginx/conf/nginx.conf
